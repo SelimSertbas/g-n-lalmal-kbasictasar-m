@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffe0f0; /* Açık pembe */
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.soru {
+    font-size: 1.5em;
+    color: #ff69b4; /* Canlı pembe */
+    margin-bottom: 25px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#hayirButonu {
+    background-color: #f08080; /* Açık kırmızı */
+    color: white;
+}
+
+#evetButonu {
+    background-color: #90ee90; /* Açık yeşil */
+    color: white;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+
+/* ... diğer CSS kodları ... */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 10;
+    /* Flexbox özelliklerini ekliyoruz */
+    display: flex;
+    flex-direction: column; /* Öğeleri alt alta sıralar */
+    align-items: center; /* Yatayda ortalar (isteğe bağlı) */
+}
+
+.popup img {
+    max-width: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.popup-mesaj {
+    font-size: 1.2em;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+#popupKapat {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #dda0dd; /* Mor */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#popupKapat:hover {
+    transform: scale(1.1);
+}
+
+/* ... diğer CSS kodları ... */
